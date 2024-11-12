@@ -1,0 +1,25 @@
+{
+  "name": "tailwind_personal_1",
+  "version": "1.0.0",
+  "description": "A Tailwind and Node project with Ejs Template engine",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon App.js",
+    "build-tail": "cross-env NODE_ENV=production tailwindcss build -i tailwindcss.css -o src/styles.css"
+  },
+  "author": "Bismark Owusu",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "tailwind_personal_1": "file:"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.14"
+  }
+}

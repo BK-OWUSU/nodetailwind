@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.app_logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.btn_signUp {
+  background-color: #eb323c;
+  color: #fff;
+  padding: 0.4rem;
+  font-weight: 500;
+  border-radius: 0.4rem;
+  border: 1px solid transparent;
+  transition: 0.5s all ease;
+}
+
+.btn_signUp:hover {
+  background-color: transparent;
+  border-color: #eb323c;
+  transform: translateY(-0.2rem);
+}
+
+.btn_signIn {
+  padding: 0.4rem;
+  font-weight: 500;
+  border-radius: 0.4rem;
+  border: 2px solid #071c4a;
+} 
