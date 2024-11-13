@@ -2,7 +2,8 @@ const express = require('express')
 const app = express()
 require('dotenv').config()
 const port = process.env.PORT || 5000;
-const path = require('path');
+const pagesRoutes = require('./routes/pages');
+//const path = require('path');
 
 // const srcDirectory = path.join(__dirname,"/src");
 // app.use(express.static(srcDirectory));
@@ -13,7 +14,7 @@ app.set('view engine', 'ejs');
 app.set("views", "./views")
 //End
 
-app.get('/' , (req , res)=>{
-   res.render('index')
-})
+//Routes
+app.use('/', pagesRoutes);
+//End
 app.listen(port , ()=> console.log('> Server is up and running on port : ' + port))
